@@ -37,14 +37,6 @@
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="d-flex flex-column">
-      <div id="CounterVisitor">
-          <span class="counter-item">0</span>
-          <span class="counter-item">0</span>
-          <span class="counter-item">1</span>
-          <span class="counter-item">1</span>
-          <span class="counter-item">8</span>
-          <span class="counter-item">4</span>
-      </div>
       <div class="profile">
         <img src="assets/img/Nayem2.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="https://mnayem.github.io/resume/">MD NAYEM</a></h1>
@@ -945,18 +937,5 @@
 </html>
 
 <script>
-  ar n = localStorage.getItem('on_load_counter');
-
-  if (n === null) {
-    n = 0;
-  }
-  n++;
   
-  localStorage.setItem("on_load_counter", n);
-  
-  nums = n.toString().split('').map(Number);
-  document.getElementById('CounterVisitor').innerHTML = '';
-  for (var i of nums) {
-    document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
-  }
 </script>
