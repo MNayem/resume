@@ -1101,13 +1101,7 @@ section {
 /*-------------------------------------------------- 
 # Center child elements 
 ----------------------------------------------------*/
-body,
-.website-counter {
 
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
 /*-------------------------------------------------
 # Styles for website counter container 
 ---------------------------------------------------*/
@@ -1120,6 +1114,10 @@ body,
   font-weight: 700;
   font-size: 25px;
   margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /*------------------------------------------------
